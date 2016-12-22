@@ -58,4 +58,6 @@ Refinery::Core.configure do |config|
   # Specify the order Refinery plugins appear in the admin view.
   # Plugins in the list are placed, as ordered, before any plugins not in the list.
   # config.plugin_priority = %w(refinery_pages refinery_images)
+
+  config.refinery_logout_path = "/administrators/sign_out"
 end
