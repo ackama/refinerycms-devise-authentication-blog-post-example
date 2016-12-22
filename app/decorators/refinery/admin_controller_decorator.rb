@@ -8,4 +8,13 @@ module RefineryAdminControllerAuthenticationDecorator
   end
 end
 
+
+module Refinery
+  module SiteBarHelper
+    def display_site_bar?
+      administrator_signed_in?
+    end
+  end
+end
+
 Refinery::AdminController.send :prepend, RefineryAdminControllerAuthenticationDecorator
